@@ -1,0 +1,46 @@
+/* 全体のスタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* ヘッダーのスタイル */
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #2e2d2b;
+  color: #fff;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.logo img {
+  margin-right: auto;
+  width: 100px;
+}
+.menu-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* メインビジュアル */
+.main-visual {
+  position: relative;
+}
+.main-visual-img {
+  width: 100%;
+  height: 680px;
+}
+.main-visual-copy {
+  font-size: 80px;
+  color: #fff;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
