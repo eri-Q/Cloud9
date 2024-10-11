@@ -7,6 +7,13 @@ body {
   background-color: #f4f4f4;
 }
 
+/* 共通 */
+.titles {
+  font-size: 32px;
+  text-align: center;
+  margin: 60px auto;
+}
+
 /* ヘッダーのスタイル */
 header {
   display: flex;
@@ -43,4 +50,33 @@ header {
   position: absolute;
   top: 130px;
   left: 50px;
+}
+
+/* サービスセクション */
+.service-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.service img {
+  width: 550px;
+}
+
+/* Aboutセクション */
+.about-group {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-item {
+  width: 35%;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  width: 400px;
 }
