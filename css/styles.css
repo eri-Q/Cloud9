@@ -10,6 +10,7 @@ body {
 /* 共通 */
 .titles {
   font-size: 32px;
+  font-weight: bold;
   text-align: center;
   margin: 60px auto;
 }
@@ -79,4 +80,48 @@ header {
   display: flex;
   align-items: center;
   width: 400px;
+}
+
+/* Contentsセクション */
+.contents {
+  padding-bottom: 100px;
+}
+.contents-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 150px;
+}
+
+.contents-item {
+  flex: 1 1 calc(50% - 20px);
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contents-item h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contents-item p:last-of-type {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* フッター */
+.footer {
+  width: 100%;
+  background-color: #2e2d2b;
+  height: 300px;
+  color: #fff;
+}
+
+.footer-group {
+  display: flex;
+  justify-content: center;
 }
