@@ -27,7 +27,13 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
+  padding: 0 20px;
 }
+
+.nav {
+  margin-left: auto; /* nav要素を右揃えにする */
+}
+
 .logo img {
   margin-right: auto;
   width: 100px;
@@ -62,7 +68,7 @@ header {
 }
 
 .service img {
-  width: 550px;
+  width: 400px;
 }
 
 /* Aboutセクション */
@@ -91,12 +97,11 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
-  margin: 0 150px;
 }
 
 .contents-item {
   flex: 1 1 calc(50% - 20px);
-  max-width: 400px;
+  max-width: 350px;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -117,11 +122,40 @@ header {
 .footer {
   width: 100%;
   background-color: #2e2d2b;
-  height: 300px;
   color: #fff;
+  display: flex;
+  flex-direction: column; /* 上下に要素を配置 */
+  align-items: center; /* ロゴを中央揃え */
+  padding: 20px 0;
+}
+
+.footer-logo {
+  width: 300px;
+  margin-bottom: 30px;
 }
 
 .footer-group {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* コンテンツを左右に配置 */
+  width: 100%;
+  max-width: 1200px; /* フッター全体の幅を制限 */
+  padding: 0 200px;
+}
+
+.footer-link,
+.footer-contact {
+  flex: 1; /* 左右に均等に広がる */
+  text-align: left; /* 左揃え */
+}
+
+.footer-contact {
+  text-align: right; /* 右揃え */
+}
+
+.footer-link ul {
+  padding: 0;
+}
+
+.footer-link ul li {
+  margin-bottom: 10px;
 }
