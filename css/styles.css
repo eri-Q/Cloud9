@@ -150,8 +150,14 @@ header {
   width: 400px;
 }
 
+/* priceセクション */
+.price-group {
+  text-align: center;
+  margin: 50px;
+}
+
 /* Contentsセクション */
-.contents {
+/* .contents {
   padding-bottom: 100px;
 }
 .contents-group {
@@ -178,7 +184,7 @@ header {
 .contents-item p:last-of-type {
   text-align: right;
   margin-top: 10px;
-}
+} */
 
 /* フッター */
 .footer {
