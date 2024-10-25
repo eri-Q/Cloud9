@@ -20,15 +20,16 @@
       </p>
       <nav class="nav">
         <ul class="menu-group">
-          <li class="menu-item"><a href="#">トップ</a></li>
-          <li class="menu-item"><a href="#">サービス</a></li>
-          <li class="menu-item"><a href="#">当店につて</a></li>
-          <li class="menu-item"><a href="#">料金</a></li>
-          <li class="menu-item"><a href="#">ご予約</a></li>
+          <li class="menu-item"><a href="#top">トップ</a></li>
+          <li class="menu-item"><a href="#points">当店のポイント</a></li>
+          <li class="menu-item"><a href="#service">サービス</a></li>
+          <li class="menu-item"><a href="#message">メッセージ</a></li>
+          <li class="menu-item"><a href="#price">料金</a></li>
+          <li class="menu-item"><a href="#reservation">ご予約</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="top">
       <div class="main-visual">
         <img
           class="main-visual-img"
@@ -37,18 +38,20 @@
         />
         <h1 class="main-visual-copy">海の魅力、無限大</h1>
       </div>
-      <section class="points">
+      <section class="points" id="points">
         <h2 class="titles">Points</h2>
-        <div class="points-group">
+        <div class="points-group group">
           <div class="points-item">
             <h3>写真&amp;動画データ無料プレゼント</h3>
             <p>
-              一緒に潜るスタッフが、あなたの素敵な瞬間を写真や動画に収めます。撮影したデータは、後日すべて無料でお渡しします。ダイビングの思い出として、ぜひご活用ください！            </p>
+              一緒に潜るスタッフが、あなたの素敵な瞬間を写真や動画に収めます。撮影したデータは、後日すべて無料でお渡しします。ダイビングの思い出として、ぜひご活用ください！
+            </p>
           </div>
           <div class="points-item">
             <h3>高品質機材をご提供</h3>
             <p>
-              全て新品の高品質な機材を取り揃えており、フルレンタルが可能です。手ぶらで気軽にダイビングを楽しめます。また、全ての機材をブラックで統一しているのは、店主のこだわり。スタイリッシュかつ安全に、沖縄の美しい海を満喫してください！            </p>
+              全て高品質な機材を取り揃えており、フルレンタルが可能です。手ぶらで気軽にダイビングを楽しめます。また、全ての機材をブラックで統一しているのは、店主のこだわり。スタイリッシュかつ安全に、沖縄の美しい海を満喫してください！
+            </p>
           </div>
           <div class="points-item">
             <h3>少人数制で安心</h3>
@@ -64,26 +67,54 @@
           </div>
         </div>
       </section>
-      <section class="service">
+      <section class="service" id="service">
         <h2 class="titles">Service</h2>
-        <div class="service-group">
+        <div class="service-group group">
           <div class="service-item">
             <img src="img/snorkeling.jpg" alt="シュノーケルサービス" />
+            <h3>シュノーケリング</h3>
+            <p>
+              初めての方でも安心！綺麗な沖縄の海と生き物を楽しみたい方におすすめ！
+            </p>
+            <a href="" class="btn btn-border-shadow btn-border-shadow--color2"
+              >詳しく見る</a
+            >
           </div>
           <div class="service-item">
             <img src="img/Experience diving.jpg" alt="体験ダイビングサービス" />
+            <h3>体験ダイビング</h3>
+            <p>
+              初めての方でも安心！綺麗な沖縄の海と生き物を楽しみたい方におすすめ！
+            </p>
+            <a href="" class="btn btn-border-shadow btn-border-shadow--color2"
+              >詳しく見る</a
+            >
           </div>
           <div class="service-item">
             <img src="img/fun dive.jpg" alt="ファンダイビングサービス" />
+            <h3>ファンダイビング</h3>
+            <p>
+              初めての方でも安心！綺麗な沖縄の海と生き物を楽しみたい方におすすめ！
+            </p>
+            <a href="" class="btn btn-border-shadow btn-border-shadow--color2"
+              >詳しく見る</a
+            >
           </div>
           <div class="service-item">
             <img src="img/license.jpg" alt="ライセンス講習サービス" />
+            <h3>ライセンス講習</h3>
+            <p>
+              初めての方でも安心！綺麗な沖縄の海と生き物を楽しみたい方におすすめ！
+            </p>
+            <a href="" class="btn btn-border-shadow btn-border-shadow--color2"
+              >詳しく見る</a
+            >
           </div>
         </div>
       </section>
-      <section class="message">
+      <section class="message" id="message">
         <h2 class="titles">Message</h2>
-        <div class="message-group">
+        <div class="message-group group">
           <div class="message-item">
             <img src="img/about.jpg" alt="" />
           </div>
@@ -96,18 +127,19 @@
           </div>
         </div>
       </section>
-      <section class="price">
-        <div class="price-group">
+      <section class="price" id="price">
+        <h2 class="titles">Price</h2>
+        <div class="price-group group">
           <img src="img/LINE_ALBUM_2024.7.5_240730_24.jpg" alt="料金表の画像" />
         </div>
       </section>
-      <section class="reservation">
-        <h2 class="titles">ご予約</h2>
+      <section class="reservation" id="reservation">
+        <h2 class="titles">Reservation</h2>
         <p>
           ご予約はフォームまたはSNSのDMから承っております。
           <br />質問があればお気軽にご連絡ください！
         </p>
-        <div class="btn-group">
+        <div class="btn-group group">
           <a href="" class="btn btn-svg">
             <svg>
               <rect

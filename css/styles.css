@@ -14,6 +14,10 @@ body {
 }
 
 /* 共通 */
+.group {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .titles {
   font-size: 32px;
   font-weight: bold;
@@ -86,9 +90,10 @@ header {
 }
 
 .points-item h3 {
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
 .points-item p {
@@ -123,16 +128,99 @@ header {
   padding: 0;
 }
 
+
 /* サービスセクション */
 .service-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 100px;
 }
 
-.service img {
-  width: 400px;
+.service-item {
+  border: 1px solid #000;
+  max-width: 500px;
+  text-align: center;
+  padding: 30px;
+}
+
+.service-item img {
+  width: 100%%;
+}
+
+.service-item h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+.service-item p {
+  margin: 30px 30px 50px 30px;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+a.btn-border-shadow--color2 {
+  border-radius: 100vh;
+}
+
+a.btn-border-shadow--color2:before {
+  border-radius: 100vh;
+  -webkit-box-shadow: 3px 3px 0 #78e5e5;
+  box-shadow: 3px 3px 0 #78e5e5;
 }
 
 /* Messageセクション */
@@ -153,9 +241,9 @@ header {
 }
 
 /* priceセクション */
-.price-group {
+.price-group img {
   text-align: center;
-  margin: 50px;
+  max-width: 100%;
 }
 
 /* reservationセクション */
