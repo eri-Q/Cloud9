@@ -133,7 +133,6 @@ header {
   padding: 0;
 }
 
-
 /* サービスセクション */
 .service-group {
   display: flex;
@@ -147,9 +146,8 @@ header {
   max-width: 500px;
   text-align: center;
   padding: 30px;
-  box-shadow:
-  -10px 10px 25px rgba(255, 165, 0, 0.5),
-  10px -10px 25px rgba(24, 148, 156, 0.5)
+  box-shadow: -10px 10px 25px rgba(255, 165, 0, 0.5),
+    10px -10px 25px rgba(24, 148, 156, 0.5);
 }
 
 .service-item img {
@@ -417,18 +415,53 @@ a.btn-svg span {
   margin-bottom: 10px;
 }
 
-
 /* シュノーケリングのページ */
 
 .snorkeling-kv {
+  max-width: 1000px;
+  margin: 0 auto;
   display: flex;
   gap: 50px;
 }
 
 .snorkeling-kv img {
-  width: 400px;
+  width: 500px;
 }
 
 .snorkeling-kv p {
   text-align: justify;
+}
+
+.snorkeling-kv p span {
+  font-weight: bold;
+}
+
+.snorkeling-price-group {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.snorkeling-price-group span {
+  font-weight: bold;
+}
+table {
+  max-width: 30%;
+  font-size: 2rem;
+  border: solid 1px #778ca3;
+}
+
+tr {
+  border-top: dashed 1px #778ca3;
+  text-align: center;
+}
+
+th {
+  padding: 10px;
+  background: #e9faf9;
+  text-align: center;
+}
+
+td {
+  padding: 10px;
 }
