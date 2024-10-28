@@ -14,6 +14,10 @@ body {
   font-size: 16px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* 共通 */
 .group {
   margin: 0 auto;
@@ -411,4 +415,20 @@ a.btn-svg span {
 
 .footer-link ul li {
   margin-bottom: 10px;
+}
+
+
+/* シュノーケリングのページ */
+
+.snorkeling-kv {
+  display: flex;
+  gap: 50px;
+}
+
+.snorkeling-kv img {
+  width: 400px;
+}
+
+.snorkeling-kv p {
+  text-align: justify;
 }
