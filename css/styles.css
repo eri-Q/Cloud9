@@ -28,6 +28,7 @@ img {
   font-weight: bold;
   text-align: center;
   margin-bottom: 80px;
+  padding: 50px 0;
 }
 
 section {
@@ -417,34 +418,53 @@ a.btn-svg span {
 
 /* シュノーケリングのページ */
 
-.snorkeling-kv {
+.snorkeling-kv,
+.discoverScubaDiving-kv,
+.funDiving-kv,
+.license-kv {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   gap: 50px;
 }
 
-.snorkeling-kv img {
+.snorkeling-kv img,
+.discoverScubaDiving-kv img,
+.funDiving-kv img,
+.license-kv img {
   width: 500px;
 }
 
-.snorkeling-kv p {
+.snorkeling-kv p,
+.discoverScubaDiving-kv p,
+.funDiving-kv p,
+.license-kv p {
   text-align: justify;
 }
 
-.snorkeling-kv p span {
+.snorkeling-kv p span,
+.discoverScubaDiving-kv p span,
+.funDiving-kv p span,
+.license-kv p span {
   font-weight: bold;
 }
 
-.snorkeling-price-group {
+.snorkeling-price-group,
+.discoverScubaDiving-price-group,
+.funDiving-price-group,
+.license-price-group {
   display: flex;
   justify-content: center;
   gap: 100px;
 }
 
-.snorkeling-price-group span {
+.snorkeling-price-group span,
+.discoverScubaDiving-price-group span,
+.funDiving-price-group span,
+.license-price-group span {
   font-weight: bold;
 }
+
 table {
   max-width: 50%;
   font-size: 2rem;
