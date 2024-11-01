@@ -28,7 +28,6 @@ img {
   font-weight: bold;
   text-align: center;
   margin-bottom: 80px;
-  padding: 50px 0;
 }
 
 section {
@@ -44,10 +43,10 @@ header {
   display: flex;
   width: 100%;
   height: 100px;
-  background-color: #2e2d2b;
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -56,17 +55,48 @@ header {
 
 .nav {
   margin-left: auto; /* nav要素を右揃えにする */
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.nav:hover {
+  background-color: rgba(46, 45, 43, 0.7);
 }
 
 .logo img {
   margin-right: auto;
-  width: 100px;
+  width: 150px;
 }
+
 .menu-item {
   display: inline-block;
   padding: 10px;
 }
 
+.menu-item a {
+  position: relative;
+}
+
+.menu-item a::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.menu-item a:hover::after {
+  visibility: visible;
+  bottom: 1px;
+  opacity: 1;
+}
 /* メインビジュアル */
 .main-visual {
   position: relative;
@@ -76,10 +106,11 @@ header {
   height: 680px;
 }
 .main-visual-copy {
-  font-size: 80px;
+  font-size: 70px;
+  font-family: "Bebas Neue", sans-serif;
   color: #fff;
   position: absolute;
-  top: 130px;
+  top: 180px;
   left: 50px;
 }
 
